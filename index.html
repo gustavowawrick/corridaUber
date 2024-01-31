@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<meta charset="UTF-8">
+
+<input placeholder="Distância em KM" id="campoDistancia">
+<input placeholder="Tempo em minutos" id="campoMinutos" />
+<button onclick="calcularCorrida()">Calcular Valor</button>
+
+<script>
+    //Função para adequação de moeda e casas decimais
+    function formataMoeda(algumValor) {
+        var valorFormatado = algumValor.toFixed(2).replace('.', ',');
+        return valorFormatado;
+    }
+
+    //Função para disparar resultado de informação
+    function calcularCorrida() {
+        //Variáveis de entrada e regra de negócio
+        var tarifaDinamica = 1.4;
+        var distanciaKm = campoDistancia.value * tarifaDinamica;
+        var tempoMin = campoMinutos.value * 0.26;
+        var valorCorrida = distanciaKm + tempoMin;
+
+        alert("O valor da corrida é: " + formataMoeda(valorCorrida));
+    }
+</script>
+
+</html>
