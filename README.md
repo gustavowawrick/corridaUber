@@ -15,3 +15,7 @@ Notas
 A tarifa dinâmica utilizada é de 1.4.
 A formatação da moeda é realizada para exibir o valor calculado em reais.
 Sinta-se à vontade para explorar, modificar e utilizar este código de acordo com as suas necessidades!
+
+## Autor
+
+Gustavo Nunes Wawrick - [gustavowawrick](https://github.com/gustavowawrick)
